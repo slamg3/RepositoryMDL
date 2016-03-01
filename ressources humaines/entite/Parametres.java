@@ -1,5 +1,8 @@
 package entite;
 
+//import java.sql.DriverManager;
+//import java.sql.Connection;
+
 public class Parametres 
 {
 	private String nomUtilisateur;
@@ -7,10 +10,10 @@ public class Parametres
 	private String serveurBD;
 	private String driverSGBD;
 	public Parametres (){
-      	nomUtilisateur = "sa";
-	  	motDePasse = "sadmin";		
+      	nomUtilisateur = "gr3";
+	  	motDePasse = "GR3";		
 	  	driverSGBD ="sun.jdbc.odbc.JdbcOdbcDriver";
-	  	serveurBD = "jdbc:odbc:odbc_m2l";
+	  	serveurBD = "jdbc:odbc:ODBC_M2LG3";
 	}
 	public String getDriverSGBD() {
 		return driverSGBD;
