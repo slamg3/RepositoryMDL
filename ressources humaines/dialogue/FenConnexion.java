@@ -33,7 +33,8 @@ public class FenConnexion extends JFrame {
 			btn_connecter.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) 
 				{
-				if(ControleConnexion.getControleConnexion().controle(txt_login.getText().toLowerCase(),String.valueOf(txt_mdp.getPassword()).toLowerCase()))
+				//Modification toLowerCase() cf TP3 Mise en place
+				if(ControleConnexion.getControleConnexion().controle(txt_login.getText(),String.valueOf(txt_mdp.getPassword())))
 				{
 					ControleConnexion.getControleConnexion().connect();
 					if(ControleConnexion.getControleConnexion().getEtatControleConnexion())
